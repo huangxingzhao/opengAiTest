@@ -34,6 +34,6 @@ def evaluate_embeddings_approach(
   report = classification_report(df.sentiment,preds)
   print(report)
 
-  display = PrecisionRecallDisplay.from_predictions(df.setiment,probas,pos_label='abc')
+  display = PrecisionRecallDisplay.from_predictions(df.sentiment,probas,pos_label='positive')
 
 evaluate_embeddings_approach(labels=['An Amazon review with a negative sentiment.','An Amazon review with a positive sentiment.'])
